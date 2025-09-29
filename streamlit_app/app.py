@@ -73,11 +73,13 @@ def post_feature(lat, lon, species, conf, address="", trap_id="", image_url="", 
 
 
 # ----------------- YOUR MODEL SETUP -----------------
-# Paths (relative to this file)
-BASE = Path(__file__).resolve().parent
-MODEL_FILES = [BASE / "mnv2_cc.h5", BASE / "mnv2_cc_ft.keras"]
-LABELS_FILE = BASE / "labels.json"
-META_FILE = BASE / "mnv2_cc_meta.json"
+# Go one level up to project root, then into models/
+ROOT = Path(__file__).resolve().parents[1]   # project root
+MODEL_DIR = ROOT / "models"
+
+MODEL_FILES = [MODEL_DIR / "mnv2_cc.h5", MODEL_DIR / "mnv2_cc_ft.keras"]
+LABELS_FILE = MODEL_DIR / "labels.json"
+META_FILE = MODEL_DIR / "mnv2_cc_meta.json"
 IMG_SIZE = (224, 224)
 
 @st.cache_resource
