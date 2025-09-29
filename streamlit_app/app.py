@@ -77,6 +77,7 @@ def post_feature(lat, lon, species, conf, address="", trap_id="", image_url="", 
 ROOT = Path(__file__).resolve().parents[1]   # project root
 MODEL_DIR = ROOT / "models"
 
+BASE = Path(__file__).resolve().parent
 MODEL_FILES = [BASE / "mnv2_cc_portable.keras"]  # ✅ use only the re-saved keras model
 LABELS_FILE = BASE / "labels.json"
 META_FILE = BASE / "mnv2_cc_meta.json"
