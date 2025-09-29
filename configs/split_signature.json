@@ -1,0 +1,34 @@
+{
+  "src_counts": {
+    "Ae-aegypti": 10142,
+    "Ae-albopictus": 8866,
+    "Ae-vexans": 8140,
+    "Cx-quinquefasciatus": 9438
+  },
+  "split_counts": {
+    "train": {
+      "Ae-aegypti": 8113,
+      "Ae-albopictus": 7092,
+      "Ae-vexans": 6512,
+      "Cx-quinquefasciatus": 7550
+    },
+    "val": {
+      "Ae-aegypti": 1014,
+      "Ae-albopictus": 886,
+      "Ae-vexans": 814,
+      "Cx-quinquefasciatus": 943
+    },
+    "test": {
+      "Ae-aegypti": 1015,
+      "Ae-albopictus": 888,
+      "Ae-vexans": 814,
+      "Cx-quinquefasciatus": 945
+    }
+  },
+  "seed": 13,
+  "split": [
+    0.8,
+    0.1,
+    0.1
+  ]
+}

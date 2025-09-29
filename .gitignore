@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Data/outputs to ignore
+exports/
+*.log
+
+# OS / editor files
+.DS_Store
+Thumbs.db
