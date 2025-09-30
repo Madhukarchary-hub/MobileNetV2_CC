@@ -78,7 +78,7 @@ ROOT = Path(__file__).resolve().parents[1]   # project root
 MODEL_DIR = ROOT / "models"
 
 BASE = Path(__file__).resolve().parent
-MODEL_FILES = [BASE / "mnv2_cc_portable.keras"]  # ✅ use only the re-saved keras model
+MODEL_FILES = [BASE / "mnv2_cc_portable_legacy.h5"]  # ✅ use only the re-saved keras model
 LABELS_FILE = BASE / "labels.json"
 META_FILE = BASE / "mnv2_cc_meta.json"
 IMG_SIZE = (224, 224)
